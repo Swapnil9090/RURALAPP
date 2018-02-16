@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Googlemaps</string>
+    <string name="map">Satellite View</string>
+    <string name="Temprature">Temprature</string>
+    <string name="Humidity">Humidity</string>
+    <string name="Pressure">Pressure</string>
+    <string name="Weather">Weather</string>
+    <string name="date">Date</string>
+    <string name="cityname">City Name</string>
+    <string name="title_for_weather">CURRENT-LOCATION WEATHER CONDITION</string>
+    <string name="Discription">Discription</string>
+    <string name="google_maps_API_key">AIzaSyDXNhkz2zvlpXZBHksxj6b20NP4NUPTApE</string>
+</resources>

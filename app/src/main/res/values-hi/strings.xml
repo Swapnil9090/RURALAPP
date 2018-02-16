@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Googlemaps">गूगल नक़्शे</string>
+    <string name="map">सैटेलाइट दृश्य</string>
+    <string name="Temprature">तापमान</string>
+    <string name="Humidity">नमी</string>
+    <string name="Pressure">दबाव</string>
+    <string name="Weather">मौसम</string>
+    <string name="date">दिनांक</string>
+    <string name="title_for_weather">वर्तमान स्थान मौसम की स्थिति</string>
+    <string name="cityname">शहर का नाम</string>
+    <string name="Discription">विवरण</string>
+</resources>

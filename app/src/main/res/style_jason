@@ -1,0 +1,11 @@
+[
+  {
+    "featureType": "poi.attraction",
+    "elementType": "geometry.fill",
+    "stylers": [
+      {
+        "weight": 0.5
+      }
+    ]
+  }
+]
