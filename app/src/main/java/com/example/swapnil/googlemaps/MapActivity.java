@@ -200,12 +200,27 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     private void movecamera(LatLng latLng, float zoom,String title) {
         Log.d(TAG, "move camera: moving the camera to: lat: " + latLng.latitude + " , lng: " + latLng.longitude);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
+        List<Integer> positions = new ArrayList<>();
+        if(title != null) {
+            positions.add(1);
+            positions.add(34);
+            positions.add(121);
+        }
+        int sum = sumAll(positions);
         //droping a pin on req. place
         //if(!title.equals("My Location"))
         //{
-            MarkerOptions options=new MarkerOptions().position(latLng).title(title);
+            MarkerOptions options=new MarkerOptions().position(latLng).title(title+sum);
         mMap.addMarker(options);
         //}
+    }
+
+    private int sumAll(List<Integer> elements) {
+        int sum = 0;
+        for(Integer a : elements){
+            sum = sum + a;
+        }
+        return a;
     }
 
     private void initMap() {
