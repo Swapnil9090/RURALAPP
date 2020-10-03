@@ -10,4 +10,8 @@ public class basicUtil{
     public String blankIfNull(String str){
         return obj == null ? "" : str;
     }
+
+    public String blankIfNull2(String str){
+        return obj == null ? "" : str;
+    }
 }
