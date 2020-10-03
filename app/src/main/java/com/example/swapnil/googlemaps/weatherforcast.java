@@ -117,11 +117,11 @@ public class weatherforcast extends AppCompatActivity {
 
                     String icon_type=array.getJSONObject(0).optString("icon");
                     String imageurl="http://openweathermap.org/img/w/"+icon_type+".png";
-                   // Toast.makeText(weatherforcast.this,icon_type,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(weatherforcast.this,icon_type,Toast.LENGTH_LONG).show();
                     Glide.with(getBaseContext()).load(imageurl).into(img);
 
                     Calendar calender= Calendar.getInstance();
-                    SimpleDateFormat sdf=new SimpleDateFormat("EEEE-MM-DD");
+                    SimpleDateFormat sdf=new SimpleDateFormat("YYYY-MM-DD");
                     String formatted_data=sdf.format(calender.getTime());
                         t5.setText(formatted_data);
 
