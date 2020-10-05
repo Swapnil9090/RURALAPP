@@ -1,20 +1,11 @@
-//Java program to count subsequences of a 
-// string divisible by n 
 
 class GFG { 
 
-// Returns count of subsequences of str 
-// divisible by n. 
 	static int countDivisibleSubseq(String str, int n) { 
 		int len = str.length(); 
 
-		// division by n can leave only n remainder 
-		// [0..n-1]. dp[i][j] indicates number of 
-		// subsequences in string [0..i] which leaves 
-		// remainder j after division by n. 
 		int dp[][] = new int[len][n]; 
 
-		// Filling value for first digit in str 
 		dp[0][(str.charAt(0) - '0') % n]++; 
 
 		for (int i = 1; i < len; i++) { 
@@ -42,4 +33,3 @@ class GFG {
 		System.out.print(countDivisibleSubseq(str, n)); 
 	} 
 } 
-// This code is contributed by 29AjayKumar 
