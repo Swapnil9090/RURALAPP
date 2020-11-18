@@ -204,13 +204,18 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         if(title != null) {
             positions.add(1);
             positions.add(34);
-            positions.add(121);
+            positions.add(120);
         }
         int sum = sumAll(positions);
+        if(sum > 100) {
+            title = title + " Gt";
+        } else {
+            title = title + " Lt";
+        }
         //droping a pin on req. place
         //if(!title.equals("My Location"))
         //{
-            MarkerOptions options=new MarkerOptions().position(latLng).title(title+sum);
+            MarkerOptions options=new MarkerOptions().position(latLng).title(title);
         mMap.addMarker(options);
         //}
     }
